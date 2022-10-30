@@ -123,7 +123,6 @@ void _start() {
 void thestart() {
     return;
 }
-//TODO: switch to raw syscalls, for all the io and stuff. 
 void do_main()  {
     struct stat thestats;
     void *self = &do_main;

@@ -27,10 +27,10 @@ The virus will only infect the file a.out (which has to be an elf file), and he 
 Thus in order to play around, it is necessary to infect an a.out and rename it to something different and let this renamed file infect another a.out
 
 ## TODO:
+- IMPORTANT: the registers might contain stuff, that is needed by the original entry, which makes us crash...
 - Scan for other elf files than only a.out
-- Add a mechanism to check if the file is infected already
+- Add a mechanism to check if the file is already infected 
 - Check if an elf file is a x86_64 binary before infecting it.
-- An pie elf file can be infected correctly and will run, however it segfaults after executing... in \_\_run\_exit\_handlers but this is still unsatisfying. 
 
 ## DISCLAIMER
 - Learn, have fun and don't do stupid things!
